@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Milky Way Idle - 一键查看公会成员信息
 // @namespace    https://www.milkywayidle.com/
-// @version      1.6.2
+// @version      1.7.2
 // @description  一键查看/导出公会所有成员的详细信息，包括各技能等级、战斗等级、总等级、佩戴光环等，支持排序、搜索、CSV导出
 // @author       wangjiahao111
 // @match        https://www.milkywayidle.com/*
@@ -101,6 +101,8 @@
     flame_aura: '暴击光环',
     speed_aura: '速度光环',
     critical_aura: '暴击光环',
+    mystic_aura: '元素光环',
+    guardian_aura: '守护光环',
   }
 
   // 装备槽位中文名（与游戏内一致，键为 snake_case 的 itemLocationHrid）
@@ -135,7 +137,7 @@
   const EQUIP_SLOT_ORDER = [
     'main_hand', 'off_hand', 'head', 'charm', 'back', 'body', 'legs',
     'hands', 'feet', 'pouch', 'neck', 'earrings', 'ring', 'trinket',
-    'milking_tool', 'foraging_tool', 'woodcutting_tool', 'cheesmithing_tool',
+    'milking_tool', 'foraging_tool', 'woodcutting_tool', 'cheesesmithing_tool',
     'crafting_tool', 'tailoring_tool', 'cooking_tool', 'brewing_tool',
     'alchemy_tool', 'enhancing_tool',
   ]
